@@ -1,0 +1,9 @@
+body{
+    background-color: #323232;
+    color: #dee3e2;
+}
+
+.navbar{
+    border-bottom: solid 3px #18b0b0;
+    opacity: 0.7;
+}
