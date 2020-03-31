@@ -41,20 +41,25 @@ body{
     padding-top: 135px;
 }
 
-#home-section .form-control{
-    border-radius: 50rem;
-    -webkit-border-radius: 50rem;
-    -moz-border-radius: 50rem;
-    -ms-border-radius: 50rem;
-    -o-border-radius: 50rem;
+.display-4{
+    font-size: 3rem;
 }
 
-#home-section .btn-outline-light{
-    border-radius: 50rem;
-    -webkit-border-radius: 50rem;
-    -moz-border-radius: 50rem;
-    -ms-border-radius: 50rem;
-    -o-border-radius: 50rem;
+.explore-img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-top: 15%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.explore-img:hover{
+    box-shadow: 7px 11px 20px #204051;
 }
 
 /* MEDIA QUERY */
