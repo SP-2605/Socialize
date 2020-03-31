@@ -7,3 +7,80 @@ body{
     border-bottom: solid 3px #18b0b0;
     opacity: 0.7;
 }
+
+.welcome-text{
+    display: none;
+    visibility: hidden;
+}
+
+#home-section{
+    background-image: url(../images/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 800px;
+}
+
+#home-section .dark-overlay{
+    position: relative;
+    width: 100%;
+    min-height: 800px;
+    background-color: #323232ab;
+}
+
+#home-section .home-inner{
+    padding-top: 100px;
+}
+
+#home-section .fas{
+    color: #18b0b0;
+    
+}
+
+#home-section .card-part{
+    padding-top: 135px;
+}
+
+#home-section .form-control{
+    border-radius: 50rem;
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    -ms-border-radius: 50rem;
+    -o-border-radius: 50rem;
+}
+
+#home-section .btn-outline-light{
+    border-radius: 50rem;
+    -webkit-border-radius: 50rem;
+    -moz-border-radius: 50rem;
+    -ms-border-radius: 50rem;
+    -o-border-radius: 50rem;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width:1199.98px){
+   #home-section .display-4{
+        font-size: 2.5rem;
+    }
+
+    #home-section .lead{
+        font-size: 1rem;
+    }
+
+    #home-section .fas{
+        font-size: 1.5rem;
+    }
+
+    #home-section .card-part{
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-width:991.98px){
+    .welcome-text{
+        display: block;
+        visibility: visible;
+        text-align: center;
+    }
+}
