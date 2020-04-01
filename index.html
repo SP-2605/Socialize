@@ -16,9 +16,9 @@
     <link rel="shortcut icon" href="images/wechat.png" type="image/x-icon">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-nav" id="home">
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav id="main-nav" class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#collapseItems">
                 <span class="navbar-toggler-icon"></span>
@@ -27,19 +27,23 @@
             <div class="collapse navbar-collapse text-center" id="collapseItems">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home-section" class="nav-link">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#explore-head" class="nav-link">Explore</a>
+                        <a href="#explore-head-section" class="nav-link">Explore</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#create-head" class="nav-link">Create</a>
+                        <a href="#create-head-section" class="nav-link">Create</a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#share-head" class="nav-link">Share</a>
+                        <a href="#share-head-section" class="nav-link">Share</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#footer-section" class="nav-link">Contact-Us</a>
                     </li>
                 </ul>
             </div>
@@ -150,7 +154,8 @@
 
                 <div class="col-md-6 explore-para">
                     <h3 class="display-4 pl-3 text-secondary">Explore & Connect</h3>
-                    <p class="lead text-secondary pl-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla
+                    <p class="lead text-secondary pl-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Nulla
                         quaerat, rem aspernatur cumque delectus harum eligendi atque eius aut impedit!
                     </p>
 
@@ -159,7 +164,8 @@
                             <i class="fas fa-chevron-circle-right fa-2x text-secondary"></i>
                         </div>
                         <div class="self-align-end p-3 my-auto">
-                            <p class="lead text-secondary text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            <p class="lead text-secondary text-justify">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit.
                                 Unde hic, architecto doloremque ex consequatur nulla?
                             </p>
                         </div>
@@ -170,7 +176,8 @@
                             <i class="fas fa-chevron-circle-right fa-2x text-secondary"></i>
                         </div>
                         <div class="self-align-end p-3 my-auto">
-                            <p class="lead text-secondary text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <p class="lead text-secondary text-justify">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
                                 Ducimus impedit, facilis vero autem praesentium rerum.
                             </p>
                         </div>
@@ -232,6 +239,90 @@
             </div>
         </div>
     </section>
+
+    <!-- SHARE HEAD -->
+    <section class="" id="share-head-section">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-5">
+                    <h1 class="display-4">Share</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non suscipit
+                        deleniti sint, nobis ad possimus? Tempora numquam fuga voluptas?</p>
+
+                    <a href="#" class="btn btn-outline-light">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHARE SECTION -->
+    <section class="share-section bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 my-auto">
+                    <img src="images/share-section1.jpg" class="img-fluid share-img" alt="...">
+                </div>
+
+                <div class="col-md-6 explore-para">
+                    <h3 class="display-4 pl-3 text-secondary">Share What You Create</h3>
+                    <p class="lead text-secondary pl-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Nulla quaerat, rem aspernatur cumque delectus harum eligendi atque eius aut impedit!
+                    </p>
+
+                    <div class="d-flex">
+                        <div class="p-3 align-self-start my-auto">
+                            <i class="fas fa-chevron-circle-right fa-2x text-secondary"></i>
+                        </div>
+                        <div class="self-align-end p-3 my-auto">
+                            <p class="lead text-secondary text-justify">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Unde hic, architecto doloremque ex consequatur nulla?
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="align-self-start p-3 my-auto">
+                            <i class="fas fa-chevron-circle-right fa-2x text-secondary"></i>
+                        </div>
+                        <div class="self-align-end p-3 my-auto">
+                            <p class="lead text-secondary text-justify">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ducimus impedit, facilis vero autem praesentium rerum.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer-section" class="footer-main bg-dark py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h3 class="display-4">Contact Me</h3>
+                    <p>Copyright &copy;
+                        <span id="year"></span>
+                    </p>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="">
+                           <img onclick="window.location.href='https://github.com/SP-2605'" src="images/github.png" alt="..." class="img-fluid contact-icons">
+                        </div>
+
+                        <div class="mx-5">
+                           <img onclick="window.location.href='mailto:suriya.prasath17@siesgst.ac.in?Subject=Hey%20Suriya'" src="images/gmail.png" alt="..." class="img-fluid contact-icons">
+                        </div>
+
+                        <div class="">
+                           <img onclick="window.location.href='https://www.linkedin.com/in/suriya-prasath-s-9375aa184/'" src="images/linkedin.png" alt="..." class="img-fluid contact-icons">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 
 

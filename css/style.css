@@ -1,3 +1,7 @@
+html{
+scroll-behavior: smooth;
+}
+
 body{
     background-color: #323232;
     color: #dee3e2;
@@ -45,7 +49,7 @@ body{
     font-size: 3rem;
 }
 
-.explore-img, .create-img{
+.explore-img, .create-img, .share-img{
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -58,8 +62,13 @@ body{
     -ms-transition: all 0.5s;
     -o-transition: all 0.5s;
 }
-.explore-img:hover, .create-img:hover{
+.explore-img:hover, .create-img:hover, .share-img:hover{
     box-shadow: 7px 11px 20px #204051;
+}
+
+.contact-icons{
+    height: 2.7rem;
+    cursor: pointer;
 }
 
 /* MEDIA QUERY */
